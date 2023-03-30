@@ -3,8 +3,9 @@
 const Router = require('lambda-lambda-lambda');
 const config = require('./config.json');
 
-const accessControlHeaders  = require('./middleware/AccessControlHeaders');
-const cloudfrontCacheHeader = require('./middleware/CloudfrontCacheHeader');
+const accessControlHeaders    = require('./middleware/AccessControlHeaders');
+const cloudFrontCacheHeader   = require('./middleware/CloudFrontCacheHeader');
+const preflightOptionsHandler = require('./middleware/PreflightOptionsHandler');
 
 /**
  * @see AWS::Serverless::Function
@@ -25,7 +26,8 @@ exports.handler = (event, context, callback) => {
   });
 
   router.use(accessControlHeaders);
-  router.use(cloudfrontCacheHeader);
+  router.use(preflightOptionsHandler);
+  router.use(cloudFrontCacheHeader);
 
   // Send root response.
   router.get('/', function(req, res) {
