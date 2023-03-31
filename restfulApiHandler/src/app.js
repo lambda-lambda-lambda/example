@@ -4,6 +4,7 @@ const Router = require('lambda-lambda-lambda');
 const config = require('./config.json');
 
 const accessControlHeaders    = require('./middleware/AccessControlHeaders');
+const appConfigPlugin         = require('./middleware/AppConfigPlugin');
 const cloudFrontCacheHeader   = require('./middleware/CloudFrontCacheHeader');
 const preflightOptionsHandler = require('./middleware/PreflightOptionsHandler');
 
@@ -25,6 +26,7 @@ exports.handler = (event, context, callback) => {
     }
   });
 
+  router.use(appConfigPlugin(config));
   router.use(accessControlHeaders);
   router.use(preflightOptionsHandler);
   router.use(cloudFrontCacheHeader);
