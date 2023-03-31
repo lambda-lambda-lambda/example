@@ -7,6 +7,9 @@ const accessControlHeaders    = require('./middleware/AccessControlHeaders');
 const appConfigPlugin         = require('./middleware/AppConfigPlugin');
 const cloudFrontCacheHeader   = require('./middleware/CloudFrontCacheHeader');
 const preflightOptionsHandler = require('./middleware/PreflightOptionsHandler');
+const swaggerUIViewer         = require('./middleware/SwaggerUIViewer');
+
+const swaggerJson = require('../swagger.json');
 
 /**
  * @see AWS::Serverless::Function
@@ -30,6 +33,7 @@ exports.handler = (event, context, callback) => {
   router.use(accessControlHeaders);
   router.use(preflightOptionsHandler);
   router.use(cloudFrontCacheHeader);
+  router.use(swaggerUIViewer(swaggerJson));
 
   // Send root response.
   router.get('/', function(req, res) {
