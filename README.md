@@ -57,6 +57,10 @@ Generate documentation using [JSDoc](https://jsdoc.app):
 
     $ npm run gendoc
 
+Run [Mocha](https://mochajs.org) integration tests:
+
+    $ npm run test
+
 ## Known issues
 
 ### Project files are assigned root priviledges

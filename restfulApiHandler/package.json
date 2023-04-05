@@ -8,15 +8,20 @@
   },
   "devDependencies": {
     "aws-sdk-mock": "latest",
+    "chai": "^4.3.7",
+    "clone": "^2.1.2",
     "eslint": "latest",
     "jsdoc": "latest",
     "lambda-edge-server": "latest",
+    "mocha": "^9.2.2",
+    "resnap": "^1.0.1",
     "swagger-jsdoc": "latest"
   },
   "scripts": {
     "genapi": "swagger-jsdoc -d src/openapi.js -o swagger.json src/app.js 'src/routes/**/*.js'",
     "gendoc": "jsdoc -d doc -r src",
-    "lint": "eslint src test"
+    "lint": "eslint src test",
+    "test": "node_modules/.bin/mocha --require test/mocha.env.js 'test/**/*.js'"
   },
   "engines": {
     "node": ">=14.0.0"
