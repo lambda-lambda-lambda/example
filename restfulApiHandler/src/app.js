@@ -1,15 +1,15 @@
 'use strict';
 
 const Router = require('@lambda-lambda-lambda/router');
-const config = require('./config.json');
+const config = require(`${APP_ROOT}/config.json`);
 
-const accessControlHeaders    = require('./middleware/AccessControlHeaders');
-const appConfigPlugin         = require('./middleware/AppConfigPlugin');
-const cloudFrontCacheHeader   = require('./middleware/CloudFrontCacheHeader');
-const preflightOptionsHandler = require('./middleware/PreflightOptionsHandler');
-const swaggerUIViewer         = require('./middleware/SwaggerUIViewer');
+const accessControlHeaders    = require(`${APP_ROOT}/middleware/AccessControlHeaders`);
+const appConfigPlugin         = require(`${APP_ROOT}/middleware/AppConfigPlugin`);
+const cloudFrontCacheHeader   = require(`${APP_ROOT}/middleware/CloudFrontCacheHeader`);
+const preflightOptionsHandler = require(`${APP_ROOT}/middleware/PreflightOptionsHandler`);
+const swaggerUIViewer         = require(`${APP_ROOT}/middleware/SwaggerUIViewer`);
 
-const swaggerJson = require('../swagger.json');
+const swaggerJson = require(`${APP_ROOT}/swagger.json`);
 
 /**
  * @see AWS::Serverless::Function

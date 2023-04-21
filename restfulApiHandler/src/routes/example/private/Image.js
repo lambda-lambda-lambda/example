@@ -1,6 +1,6 @@
 'use strict';
 
-const basicAuthHandler = require('../../../middleware/BasicAuthHandler');
+const basicAuthHandler = require(`${APP_ROOT}/middleware/BasicAuthHandler`);
 
 const fs = require('fs');
 

@@ -1,7 +1,7 @@
 'use strict';
 
-const contentNegotiation = require('../middleware/ContentNegotiation');
-const contentTypeHeader  = require('../middleware/ContentTypeHeader');
+const contentNegotiation = require(`${APP_ROOT}/middleware/ContentNegotiation`);
+const contentTypeHeader  = require(`${APP_ROOT}/middleware/ContentTypeHeader`);
 
 /**
  * @export {Object}
