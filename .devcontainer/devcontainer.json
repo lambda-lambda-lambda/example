@@ -1,11 +1,11 @@
 {
   "name": "restfulApiHandler",
-  "image": "node",
+  "image": "mcr.microsoft.com/devcontainers/typescript-node:0-18",
   "forwardPorts": [3000],
   // Mount AWS config directory (Requires container rebuild)
   //"mounts": ["source=${localEnv:HOME}/.aws,target=/root/.aws,type=bind,consistency=cached"],
   "updateContentCommand": "npm install --prefix ${containerWorkspaceFolder}/restfulApiHandler >/dev/null",
-  "postCreateCommand": "apt -y update && apt -y install python3-pip && pip install aws-sam-cli && npm install -g pm2",
+  "postCreateCommand": "sudo apt -y update && sudo apt -y install python3-pip && pip install aws-sam-cli && npm install -g pm2",
   "postStartCommand": "pm2 start ${containerWorkspaceFolder}/.devcontainer/ecosystem.config.js",
   "customizations": {
     "vscode": {
@@ -19,8 +19,7 @@
         "liamhammett.inline-parameters",
         "ms-vscode-remote.remote-containers",
         "redhat.vscode-yaml",
-        "steoates.autoimport",
-        "searKing.preview-vscode"
+        "steoates.autoimport"
       ]
     }
   }
