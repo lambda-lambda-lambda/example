@@ -1,7 +1,7 @@
 'use strict';
 
 const basicAuthHandler  = require(`${APP_ROOT}/middleware/BasicAuthHandler`);
-const contentTypeHeader = require(`${APP_ROOT}/middleware/ContentTypeHeader`);
+const contentTypeHeader = require(`${APP_ROOT}/middleware/ContentTypeJsonHeader`);
 
 /**
  * @export {Object}
