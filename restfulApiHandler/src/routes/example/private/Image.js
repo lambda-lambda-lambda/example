@@ -33,7 +33,7 @@ module.exports = {
    *       - Protected image
    */
   index (req, res) {
-    const buffer = fs.readFileSync(`${__dirname}/../../../../package.png`);
+    const buffer = fs.readFileSync(`${APP_ROOT}/images/ROTN.jpg`);
 
     if (buffer) {
 
