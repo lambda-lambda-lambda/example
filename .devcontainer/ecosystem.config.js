@@ -1,7 +1,8 @@
 module.exports = {
   apps: [{
-    script: 'cd restfulApiHandler; node_modules/lambda-edge-server/server.js',
+    script: 'node_modules/lambda-edge-server/server.js',
     args: '--handler src/app.js',
+    cwd: 'restfulApiHandler',
     error_file: '.devcontainer/error.log',
     out_file: '.devcontainer/debug.log',
     watch: ['restfulApiHandler/src'],
