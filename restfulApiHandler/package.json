@@ -21,7 +21,7 @@
     "genapi": "swagger-jsdoc -d src/openapi.js -o src/swagger.json src/app.js 'src/routes/**/*.js'",
     "gendoc": "jsdoc -d doc -r src",
     "lint": "eslint src test",
-    "test": "node_modules/.bin/mocha --require test/mocha.env.js 'test/**/*.js'"
+    "test": "mocha --require test/mocha.env.js 'test/**/*.js'"
   },
   "engines": {
     "node": ">=14.0.0"
