@@ -23,6 +23,11 @@ module.exports = {
    *           image/png:
    *             schema:
    *               type: string
+   *         headers:
+   *           Content-Type:
+   *             schema:
+   *               type: string
+   *               example: image/png; charset=utf-8
    *       401:
    *         description: Unauthorized
    *       404:

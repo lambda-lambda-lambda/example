@@ -46,6 +46,14 @@
                   }
                 }
               }
+            },
+            "headers": {
+              "Content-Type": {
+                "schema": {
+                  "type": "string",
+                  "example": "application/json"
+                }
+              }
             }
           }
         },
@@ -78,6 +86,14 @@
                       "type": "string"
                     }
                   }
+                }
+              }
+            },
+            "headers": {
+              "Content-Type": {
+                "schema": {
+                  "type": "string",
+                  "example": "application/json"
                 }
               }
             }
@@ -131,6 +147,14 @@
                   }
                 }
               }
+            },
+            "headers": {
+              "Content-Type": {
+                "schema": {
+                  "type": "string",
+                  "example": "application/json"
+                }
+              }
             }
           },
           "406": {
@@ -178,6 +202,14 @@
                       "type": "string"
                     }
                   }
+                }
+              }
+            },
+            "headers": {
+              "Content-Type": {
+                "schema": {
+                  "type": "string",
+                  "example": "application/json"
                 }
               }
             }
@@ -229,6 +261,14 @@
                   }
                 }
               }
+            },
+            "headers": {
+              "Content-Type": {
+                "schema": {
+                  "type": "string",
+                  "example": "application/json"
+                }
+              }
             }
           },
           "406": {
@@ -260,6 +300,14 @@
                   }
                 }
               }
+            },
+            "headers": {
+              "Content-Type": {
+                "schema": {
+                  "type": "string",
+                  "example": "application/json"
+                }
+              }
             }
           },
           "401": {
@@ -289,6 +337,14 @@
                       "type": "string"
                     }
                   }
+                }
+              }
+            },
+            "headers": {
+              "Content-Type": {
+                "schema": {
+                  "type": "string",
+                  "example": "application/json"
                 }
               }
             }
@@ -335,6 +391,14 @@
                   }
                 }
               }
+            },
+            "headers": {
+              "Content-Type": {
+                "schema": {
+                  "type": "string",
+                  "example": "application/json"
+                }
+              }
             }
           },
           "401": {
@@ -375,6 +439,14 @@
                       "type": "string"
                     }
                   }
+                }
+              }
+            },
+            "headers": {
+              "Content-Type": {
+                "schema": {
+                  "type": "string",
+                  "example": "application/json"
                 }
               }
             }
@@ -419,6 +491,14 @@
                   }
                 }
               }
+            },
+            "headers": {
+              "Content-Type": {
+                "schema": {
+                  "type": "string",
+                  "example": "application/json"
+                }
+              }
             }
           },
           "401": {
@@ -445,6 +525,14 @@
               "image/png": {
                 "schema": {
                   "type": "string"
+                }
+              }
+            },
+            "headers": {
+              "Content-Type": {
+                "schema": {
+                  "type": "string",
+                  "example": "image/png; charset=utf-8"
                 }
               }
             }

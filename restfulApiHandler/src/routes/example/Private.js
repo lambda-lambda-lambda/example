@@ -26,6 +26,11 @@ module.exports = {
    *               properties:
    *                 name:
    *                   type: string
+   *         headers:
+   *           Content-Type:
+   *             schema:
+   *               type: string
+   *               example: application/json
    *       401:
    *         description: Unauthorized
    *     security:
@@ -60,6 +65,11 @@ module.exports = {
    *               properties:
    *                 name:
    *                   type: string
+   *         headers:
+   *           Content-Type:
+   *             schema:
+   *               type: string
+   *               example: application/json
    *       401:
    *         description: Unauthorized
    *     security:
@@ -94,6 +104,11 @@ module.exports = {
    *               properties:
    *                 name:
    *                   type: string
+   *         headers:
+   *           Content-Type:
+   *             schema:
+   *               type: string
+   *               example: application/json
    *       401:
    *         description: Unauthorized
    *     security:
@@ -128,6 +143,11 @@ module.exports = {
    *               properties:
    *                 name:
    *                   type: string
+   *         headers:
+   *           Content-Type:
+   *             schema:
+   *               type: string
+   *               example: application/json
    *       401:
    *         description: Unauthorized
    *     security:
@@ -155,6 +175,11 @@ module.exports = {
    *               properties:
    *                 name:
    *                   type: string
+   *         headers:
+   *           Content-Type:
+   *             schema:
+   *               type: string
+   *               example: application/json
    *       401:
    *         description: Unauthorized
    *     security:

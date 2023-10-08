@@ -33,6 +33,11 @@ module.exports = {
    *               properties:
    *                 name:
    *                   type: string
+   *         headers:
+   *           Content-Type:
+   *             schema:
+   *               type: string
+   *               example: application/json
    *     tags:
    *       - Public route
    */
@@ -69,6 +74,11 @@ module.exports = {
    *               properties:
    *                 name:
    *                   type: string
+   *         headers:
+   *           Content-Type:
+   *             schema:
+   *               type: string
+   *               example: application/json
    *       406:
    *         description: Not Acceptable
    *       415:
@@ -109,6 +119,11 @@ module.exports = {
    *               properties:
    *                 name:
    *                   type: string
+   *         headers:
+   *           Content-Type:
+   *             schema:
+   *               type: string
+   *               example: application/json
    *       406:
    *         description: Not Acceptable
    *       415:
@@ -149,6 +164,11 @@ module.exports = {
    *               properties:
    *                 name:
    *                   type: string
+   *         headers:
+   *           Content-Type:
+   *             schema:
+   *               type: string
+   *               example: application/json
    *       406:
    *         description: Not Acceptable
    *       415:
@@ -183,6 +203,11 @@ module.exports = {
    *               properties:
    *                 name:
    *                   type: string
+   *         headers:
+   *           Content-Type:
+   *             schema:
+   *               type: string
+   *               example: application/json
    *       406:
    *         description: Not Acceptable
    *       415:
