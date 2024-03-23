@@ -6,8 +6,9 @@ module.exports = {
     error_file: '../.devcontainer/error.log',
     out_file: '../.devcontainer/debug.log',
     watch: ['src'],
-    watch_delay: 1000,
+    watch_delay: 5000,
+    instance_var: 'dev',
     instances: 1,
     exec_mode: 'fork'
   }]
-}
+};
