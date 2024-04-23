@@ -1,3 +1,5 @@
+eslint.config.js
+jsdoc.json
 src/.middleware
 test/*
 README.md
