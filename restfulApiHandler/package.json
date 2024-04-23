@@ -4,15 +4,15 @@
   "description": "Handler example with preconfigured routes and middleware.",
   "main": "src/app.js",
   "dependencies": {
-    "@lambda-lambda-lambda/router": "latest"
+    "@lambda-lambda-lambda/router": "^0.8.1"
   },
   "devDependencies": {
-    "aws-sdk-mock": "latest",
-    "chai": "^4.3.7",
+    "aws-sdk-mock": "^5.9.0",
+    "chai": "^4.4.1",
     "clone": "^2.1.2",
-    "eslint": "latest",
+    "eslint": "^9.1.1",
     "jsdoc": "latest",
-    "lambda-edge-server": "latest",
+    "lambda-edge-server": "^0.1.0",
     "mocha": "^9.2.2",
     "resnap": "^1.0.1",
     "swagger-jsdoc": "latest"
