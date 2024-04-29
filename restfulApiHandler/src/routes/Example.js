@@ -16,13 +16,6 @@ module.exports = {
    * /api/example:
    *   get:
    *     description: Example using `Route.index` handler alias.
-   *     parameters:
-   *       - in: header
-   *         name: Accept
-   *         schema:
-   *           type: string
-   *           example: application/json
-   *           required: true
    *     responses:
    *       200:
    *         description: Returns JSON response.
@@ -52,12 +45,6 @@ module.exports = {
    *   put:
    *     description: Example using `Route.create` handler alias.
    *     parameters:
-   *       - in: header
-   *         name: Accept
-   *         schema:
-   *           type: string
-   *           example: application/json
-   *           required: true
    *       - in: path
    *         name: resourceId
    *         schema:
@@ -97,12 +84,6 @@ module.exports = {
    *   patch:
    *     description: Example using `Route.update` handler alias.
    *     parameters:
-   *       - in: header
-   *         name: Accept
-   *         schema:
-   *           type: string
-   *           example: application/json
-   *           required: true
    *       - in: path
    *         name: resourceId
    *         schema:
@@ -142,12 +123,6 @@ module.exports = {
    *   delete:
    *     description: Example using `Route.delete` handler method.
    *     parameters:
-   *       - in: header
-   *         name: Accept
-   *         schema:
-   *           type: string
-   *           example: application/json
-   *           required: true
    *       - in: path
    *         name: resourceId
    *         schema:
@@ -186,13 +161,6 @@ module.exports = {
    * /api/example:
    *   post:
    *     description: Example using `Route.submit` handler alias.
-   *     parameters:
-   *       - in: header
-   *         name: Accept
-   *         schema:
-   *           type: string
-   *           example: application/json
-   *           required: true
    *     responses:
    *       200:
    *         description: Returns JSON response.
