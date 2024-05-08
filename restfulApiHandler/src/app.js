@@ -37,7 +37,10 @@ exports.handler = (event, context, callback) => {
 
   // Send root response.
   router.get('/', function(req, res) {
-    res.status(501).send();
+
+    // Redirect to Swagger viewer.
+    res.setHeader('Location', `/${config.router.prefix}/?swagger-ui=html`);
+    res.status(301).send();
   });
 
   // .. everything else.

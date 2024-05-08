@@ -1,6 +1,6 @@
 # restfulApiHandler
 
-L³ application demo with preconfigured routes and middleware.
+[L³](https://github.com/lambda-lambda-lambda) application demo with preconfigured routes and [middleware](https://github.com/lambda-lambda-lambda/middleware).
 
 ## Dependencies
 
@@ -22,7 +22,7 @@ In the VS Code _Command Palette_ choose "Open Folder in Container" which will la
 
 ## Deploying to AWS
 
-    $ ./deploy
+    $ ./deploy --profile <AWS credentials profile>
 
 ## AWS requirements
 
