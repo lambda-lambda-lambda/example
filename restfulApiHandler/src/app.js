@@ -20,7 +20,7 @@ exports.handler = (event, context, callback) => {
   const router = new Router(request, response);
   router.setPrefix(config.router.prefix);
 
-  // Middleware (order is important).
+  // Middleware (in execution order).
   router.use(function(req, res, next) {
     if (req.method() === 'CONNECT') {
       res.status(405).send();
@@ -35,11 +35,11 @@ exports.handler = (event, context, callback) => {
   router.use(cloudFrontCacheHeader);
   router.use(swaggerUIViewer(swaggerJson));
 
-  // Send root response.
+  // Middleware (in execution order).
   router.get('/', function(req, res) {
 
-    // Redirect to Swagger viewer.
-    res.setHeader('Location', `/${config.router.prefix}/?swagger-ui=html`);
+    // Redirect to Swagger UI viewer.
+    res.setHeader('Location', `${config.router.prefix}/?swagger-ui=html`);
     res.status(301).send();
   });
 
