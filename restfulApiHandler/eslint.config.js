@@ -1,8 +1,16 @@
-module.exports = [
+const {defineConfig} = require('eslint/config');
+
+module.exports = defineConfig([
   {
-    files: ['**/*.js'],
     languageOptions: {
-      ecmaVersion: 13
+      globals: {
+        es6: true,
+        node: true
+      },
+      parserOptions: {
+        ecmaVersion: 2021,
+        sourceType: 'module'
+      }
     },
     rules: {
       'array-bracket-spacing': [
@@ -61,4 +69,4 @@ module.exports = [
       'space-unary-ops': 2
     }
   }
-];
+]);
